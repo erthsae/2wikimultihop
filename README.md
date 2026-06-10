@@ -26,9 +26,10 @@
    `source venv/bin/activate`  
    `pip install -r requirements.txt`
 
-3. 修改 `web_app.py` 中的 Neo4j 连接配置（URI、用户名、密码）
+3. 修改 `web.py` 中的 Neo4j 连接配置
 
-4. 确保 Neo4j 服务已启动，且数据已导入（Question、Entity 节点及关系）
+4. 确保 Neo4j 服务已启动，且数据已导入
+   sudo systemctl start neo4j
 
 5. 运行应用  
    `python web.py`
